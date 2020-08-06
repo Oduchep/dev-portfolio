@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.container {
+    margin-top: 3rem;
+    width: 95%;
+    border: 3px solid yellow;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.507);
+    background-image: url(./passport2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-blend-mode: multiply;
+    background-position: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-nav{
+    color: white;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin: 60px 0 0 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.side-nav > li{
+    font-weight: bolder;
+    display: inline-block;
+    letter-spacing: 1px;
+    padding-top: 2rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.introduction {
+    padding-top: 6rem;
+}
+
+.greet {
+    font-size: 1.5rem;
+}
+
+.name {
+    font-size: 3rem;
+}
+
+.job {
+    background-color: yellow;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.role p, .contact p {
+    font-size: 1.5rem;
+    padding-right: 1.5em;
+}
+
+i.fa {
+    padding-top: 0.6rem;
+    padding-right: 0.6rem;
+    font-size: 1.5rem;
+    color: yellow;
+}
+
+.section2 {
+    display: flex;
+    align-self: flex-end;
+    background-color: yellow;
+    border-top-left-radius: 0.5rem;
+    border-top: 2px solid yellow;
+}
+
+.hire-me {
+    color: black;
+    font-size: 1.1rem;
+    padding: 0.7rem 1.7rem;
+}
+
+.contact-me {
+    background-color: black;
+    font-size: 1.1rem;
+    padding: 0.7rem 1.7rem;
+    border-bottom-right-radius: 0.9rem;
+}
