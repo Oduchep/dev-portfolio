@@ -11,18 +11,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-main {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-
+nav  {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .container {
-    margin-top: 3rem;
-    width: 95%;
-    border: 3px solid yellow;
-    border-radius: 15px;
+    margin-top: 2rem;
     background-color: rgba(0, 0, 0, 0.507);
     background-image: url(./passport.png);
     background-repeat: no-repeat;
@@ -30,56 +25,60 @@ main {
     background-blend-mode: multiply;
     background-position: 5rem;
     display: flex;
-    justify-content: space-between;
-    height: 90vh;
+    flex-direction: column;
 }
 
-.side-nav{
-    color: white;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    margin: 60px 0 0 40px;
+.nav-bar{
+    position: fixed;
+    background-color: black;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
     font-family: 'Roboto', sans-serif;
 }
 
-.side-nav > li{
-    font-weight: bolder;
-    display: inline-block;
-    letter-spacing: 1px;
-    padding-top: 2rem;
+.nav-bar > li{
+    list-style-type: none;
+    padding: 1rem 0;
 }
 
-.side-nav a {
+.nav-bar a {
     color: white;
     text-decoration: none;
 }
 
-.section {
+.about {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: flex-end;
+    line-height: 2rem;
 }
 
 .introduction {
-    padding-top: 6rem;
+    width: 50%;
+    padding-top: 1.5rem;
+}
+.role {
+    width: 50%;
 }
 
 .greet {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .name {
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .job {
     background-color: yellow;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: black;
 }
 
-.role p, .contact p {
-    font-size: 1.5rem;
+.role p, .socials p {
+    font-size: 1rem;
     padding-right: 1.5em;
 }
 
@@ -90,12 +89,97 @@ i.fa {
     color: yellow;
 }
 
+.skills {
+    text-align: center;
+    padding: 1.5rem 0 0 0;
+}
+
+.skill-cards {
+    padding-top: 0.7rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.html, .css, .javascript {
+    width: 25%;
+    background-color: yellow;
+    color: black;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.my-contacts {
+    margin-bottom: 2rem;
+}
+
+.my-contacts h2 {
+    padding: 1.5rem 0 0 0;
+    text-align: center;
+}
+
+.reach-out {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.contacts {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-form, .socials {
+    width: 45%;
+}
+
+form {
+    background-color: yellow;
+    color: black;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.form-content {
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-content input {
+    width: 70%;
+    height: 2rem;
+    background-color: black;
+    color: white;
+}
+
+.form-content label {
+    font-size: 1.2rem;
+}
+
+.form-content .textarea {
+    height: 7rem;
+}
+
+.button input {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
 .section2 {
     display: flex;
     align-self: flex-end;
     background-color: yellow;
     border-top-left-radius: 0.5rem;
     border-top: 2px solid yellow;
+}
+
+.socials {
+    margin-top: 1rem;
 }
 
 .hire-me {
@@ -117,36 +201,21 @@ i.fa {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 480px) {
-    .container {
-        margin-top: 1rem;
-        flex-direction: column;
-        background-position: center;
-
-
-        width: unset;
-        border: unset;
-        border-radius: unset;
-        height: 80vh;
+    .nav-bar {
+        width: 100%;
     }
 
-    .side-nav {
-        writing-mode: horizontal-tb;
-        transform: unset;
-        margin: unset;
-    }
-
-    .side-nav > li{
-        font-weight: unset;
-        display: unset;
-        letter-spacing: unset;
-        padding-top: unset;
-    }
-
-    .introduction {
-        padding: 0.5rem 0 0 1rem;
+    .introduction, .role {
+        width: 90%;
     }
     
-    .greet, .job {
+    .greet {
+        margin-top: 4rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .job {
         font-size: 1rem;
         margin-bottom: 1rem;
     }
@@ -155,12 +224,47 @@ i.fa {
         font-size: 1.5rem;
     }
     
-    .role p, .contact p {
+    .role p, .socials p {
         font-size: 1rem;
     }
 
-    .contact, .role {
+    .socials, .role {
         margin: 1rem 0 1rem 1rem;
+    }
+
+    .skill-cards {
+        flex-direction: column;
+    }
+    
+    .html, .css, .javascript {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .reach-out {
+        padding: 1rem 1rem;
+    }
+    
+    .contacts {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .my-form, .socials {
+        width: 100%;
+    }
+    
+    .form-content {
+        margin: 1rem 0;
+    }
+    
+    .form-content input {
+        width: 67%;
+    }
+    
+    
+    .button input {
+        font-size: 1rem;
     }
     
     i.fa {
@@ -182,32 +286,21 @@ i.fa {
 }
 
 @media only screen and (max-width: 600px) {
-    .container {
-        margin-top: 1rem;
-        flex-direction: column;
-        background-position: center;
+    .nav-bar {
+        width: 100%;
     }
 
-    .side-nav {
-        display: flex;
-        justify-content: space-around;
-        writing-mode: horizontal-tb;
-        transform: unset;
-        margin: 10px 0px 0px 0px;
-    }
-
-    .side-nav > li{
-        font-weight: unset;
-        display: unset;
-        letter-spacing: unset;
-        padding-top: unset;
-    }
-
-    .introduction {
-        padding: 3rem 0 0 1rem;
+    .introduction, .role {
+        width: 90%;
     }
     
-    .greet, .job {
+    .greet {
+        margin-top: 4rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .job {
         font-size: 1rem;
         margin-bottom: 1rem;
     }
@@ -216,12 +309,47 @@ i.fa {
         font-size: 1.5rem;
     }
     
-    .role p, .contact p {
+    .role p, .socials p {
         font-size: 1rem;
     }
 
-    .contact, .role {
+    .socials, .role {
         margin: 1rem 0 1rem 1rem;
+    }
+
+    .skill-cards {
+        flex-direction: column;
+    }
+    
+    .html, .css, .javascript {
+        width: 70%;
+        margin: 1rem auto;
+    }
+
+    .reach-out {
+        padding: 1rem 1rem;
+    }
+    
+    .contacts {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .my-form, .socials {
+        width: 100%;
+    }
+    
+    .form-content {
+        margin: 1rem 0;
+    }
+    
+    .form-content input {
+        width: 67%;
+    }
+    
+    
+    .button input {
+        font-size: 1rem;
     }
     
     i.fa {
@@ -244,46 +372,23 @@ i.fa {
 
 /* Medium devices (landscape tablets, 768px and below) */
 @media only screen and (max-width: 768px) {
-    .container {
-        margin-top: 1rem;
-        flex-direction: column;
-        background-position: center;
-    }
-
-    .side-nav {
-        display: flex;
-        justify-content: space-around;
-        writing-mode: horizontal-tb;
-        transform: unset;
-        margin: 10px 0px 0px 0px;
-    }
-
-    .side-nav > li{
-        font-weight: unset;
-        display: unset;
-        letter-spacing: unset;
-        padding-top: unset;
-    }
-
-    .introduction {
-        padding: 0rem 0 0 1rem;
+    .reach-out {
+        padding: 1rem 1rem;
     }
     
-    .greet, .job {
-        font-size: 1rem;
-        margin-bottom: 1rem;
+    .my-form {
+        width: 55%;
+    }
+    .socials {
+        width: 35%;
     }
     
-    .name {
-        font-size: 1.5rem;
+    .form-content {
+        margin: 1rem 0;
     }
     
-    .role p, .contact p {
-        font-size: 1rem;
-    }
-
-    .contact, .role {
-        margin: 1rem 0 1rem 1rem;
+    .form-content input {
+        width: 68%;
     }
     
     i.fa {

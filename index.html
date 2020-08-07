@@ -9,19 +9,21 @@
 </head>
 <body>
     <main>
-        <div class="container">
+        <header>
             <nav>
-                <ul class="side-nav">
+                <ul class="nav-bar">
                     <li> <a href="">Home</a> </li>
                     <li><a href=""> About me </a></li>
-                    <li><a href=""> Portfolio </a></li>
+                    <li><a href=""> Skills </a></li>
                     <li><a href=""> Contact me </a></li>
                 </ul>
             </nav>
+        </header>
 
-            <div class="section">
+        <div class="container">
+            <section class="about">
                 <div class="introduction">
-                    <p class="greet"> Hello </p>
+                    <p class="greet"> Hello, </p>
                     <p class="name"> I'm Peter </p>
                     <p class="job"> I am a Frontend Developer </p>
                 </div>
@@ -30,21 +32,78 @@
                         I absolutely love my job and I am pretty good at it.
                     </p>
                 </div>
-                <div class="contact">
-                    <p> Find me on: </p>
-                    <span>
-                        <a href="https://github.com/Oduchep"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        <a href="https://stackoverflow.com/users/13959857/oduchep"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                        <a href="https://twitter.com/JuanPedro_Mario"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="https://www.linkedin.com/in/peter-okerulu-624572190/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        <a href="https://www.freecodecamp.org/juanpedro_mario"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
-                    </span>
+            </section>
+
+            <section class="skills">
+                <h2> Skills </h2>
+                <div class="skill-cards">
+                    <div class="html">
+                        <img src="./html5 logo.png" alt="html5 logo" width="70px" height="80px">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="css">
+                        <img src="./css3.png" alt="css3 logo" width="70px" height="80px">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="javascript">
+                        <img src="./javascript logo.png" alt="javacsript logo" width="70px" height="80px">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
                 </div>
+            </section>
+
+            <section class="my-contacts">
+                <h2> Contact me </h2>
+                <p class="reach-out"> I would really love to hear from you.
+                    Reach out to me and I will get back to you in less that 24hrs. </p>
+                <div class="contacts">
+                    <div class="my-form">
+                        <form action="">
+                            <div class="form-content">
+                                <label for=""> Name: </label>
+                                <input type="text" placeholder="Enter Your Name">
+                            </div>
+                            <div class="form-content">
+                                <label for=""> Email: </label>
+                                <input type="text" placeholder="Enter Your Email">
+                            </div>
+                            <div class="form-content">
+                                <label for=""> Message: </label>
+                                <input type="text" placeholder="Please Type Message Here" class="textarea">
+                            </div>
+                            <div class="button"><input type="submit" value="Submit"></div>
+                            
+                            
+                        </form>
+                    </div>
+                    <div class="socials">
+                        <p> You can also find me on: </p>
+                        <span>
+                            <a href="https://github.com/Oduchep"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://stackoverflow.com/users/13959857/oduchep"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/JuanPedro_Mario"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/peter-okerulu-624572190/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="https://www.freecodecamp.org/juanpedro_mario"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
+                        </span>
+                    </div>
+                </div>
+            </section>
                 <div class="section2">
                     <div class="hire-me"> Hire me </div>
                     <div class="contact-me"> Contact me </div>
                 </div>
-            </div>
 
         </div>
     </main>
