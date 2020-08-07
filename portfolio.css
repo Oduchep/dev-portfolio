@@ -105,12 +105,21 @@ i.fa {
     border-bottom-right-radius: 0.9rem;
 }
 
+
+
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 480px) {
     .container {
         margin-top: 1rem;
         flex-direction: column;
         background-position: center;
+
+
+        width: unset;
+        border: unset;
+        border-radius: unset;
     }
 
     .side-nav {
