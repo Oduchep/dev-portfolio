@@ -120,6 +120,7 @@ i.fa {
         width: unset;
         border: unset;
         border-radius: unset;
+        height: 100vh;
     }
 
     .side-nav {
