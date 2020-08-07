@@ -49,6 +49,11 @@ main {
     padding-top: 2rem;
 }
 
+.side-nav a {
+    color: white;
+    text-decoration: none;
+}
+
 .section {
     display: flex;
     flex-direction: column;
@@ -125,7 +130,6 @@ i.fa {
     }
 
     .side-nav {
-        background-color: violet;
         writing-mode: horizontal-tb;
         transform: unset;
         margin: unset;
