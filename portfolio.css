@@ -49,6 +49,9 @@ nav  {
 }
 
 .about {
+    margin-top: 3rem;
+    background-color: yellow;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -57,7 +60,7 @@ nav  {
 
 .introduction {
     width: 50%;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
 }
 .role {
     width: 50%;
@@ -72,9 +75,7 @@ nav  {
 }
 
 .job {
-    background-color: yellow;
     font-size: 1rem;
-    color: black;
 }
 
 .role p, .socials p {
@@ -210,7 +211,7 @@ form {
     }
     
     .greet {
-        margin-top: 4rem;
+        margin-top: 1rem
         font-size: 1rem;
         margin-bottom: 1rem;
     }
@@ -299,7 +300,7 @@ form {
     }
     
     .greet {
-        margin-top: 4rem;
+        margin-top: 1rem;
         font-size: 1rem;
         margin-bottom: 1rem;
     }
