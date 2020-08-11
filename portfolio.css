@@ -53,17 +53,30 @@ nav  {
     background-color: yellow;
     color: black;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    justify-content: space-evenly;
     line-height: 2rem;
+    padding-bottom: 1em;
+}
+
+.image {
+    border-radius: 10px;
+    width: 30%;
+    margin: 1em auto;
+    padding: 2em 0;
+    background-color: black;
+}
+
+.image img {
+    height: 250px;
+    display: block;
+    margin: auto;
+    width: 70%;
+    border: 3px solid yellow;
 }
 
 .introduction {
-    width: 50%;
+    width: 45%;
     padding-top: 1rem;
-}
-.role {
-    width: 50%;
 }
 
 .greet {
@@ -78,7 +91,7 @@ nav  {
     font-size: 1rem;
 }
 
-.role p, .socials p {
+.role, .socials p {
     font-size: 1rem;
     padding-right: 1.5em;
 }
@@ -153,6 +166,8 @@ form {
     height: 2rem;
     background-color: black;
     color: white;
+    border-radius: 5px;
+    border: none;
 }
 
 .form-content label {
@@ -169,6 +184,8 @@ form {
     color: white;
     font-size: 1.2rem;
     padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
 }
 
 .section2 {
@@ -206,12 +223,21 @@ form {
         width: 100%;
     }
 
-    .introduction, .role {
+    .about {
+        flex-direction: column;
+    }
+
+    .image {
         width: 90%;
+    }
+
+    .introduction {
+        width: 90%;
+        margin: auto;
     }
     
     .greet {
-        margin-top: 1rem
+        margin-top: 1rem;
         font-size: 1rem;
         margin-bottom: 1rem;
     }
@@ -225,11 +251,11 @@ form {
         font-size: 1.5rem;
     }
     
-    .role p, .socials p {
+    .socials p {
         font-size: 1rem;
     }
 
-    .socials, .role {
+    .socials {
         margin: 1rem 0 1rem 1rem;
     }
 
@@ -275,7 +301,7 @@ form {
     i.fa {
         padding-top: 0.6rem;
         padding-right: 0.6rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     
     .hire-me {
@@ -295,8 +321,17 @@ form {
         width: 100%;
     }
 
-    .introduction, .role {
+    .about {
+        flex-direction: column;
+    }
+
+    .image {
         width: 90%;
+    }
+
+    .introduction {
+        width: 90%;
+        margin: auto;
     }
     
     .greet {
@@ -314,11 +349,11 @@ form {
         font-size: 1.5rem;
     }
     
-    .role p, .socials p {
+    .socials p {
         font-size: 1rem;
     }
 
-    .socials, .role {
+    .socials {
         margin: 1rem 0 1rem 1rem;
     }
 
@@ -352,7 +387,6 @@ form {
         width: 67%;
     }
     
-    
     .button input {
         font-size: 1rem;
     }
@@ -360,7 +394,7 @@ form {
     i.fa {
         padding-top: 0.6rem;
         padding-right: 0.6rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     
     .hire-me {
@@ -399,7 +433,7 @@ form {
     i.fa {
         padding-top: 0.6rem;
         padding-right: 0.6rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     
     .hire-me {
